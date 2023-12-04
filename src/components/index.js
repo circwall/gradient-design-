@@ -1,0 +1,5 @@
+export {default as Hero} from './Hero/Hero'
+export {default as What} from './What/What'
+export{default as Cltable} from './Cltable/Cltable'
+export {default as ExpertiseText} from './ExpertiseText/ExpertiseText'
+export {default as That} from './That/That'

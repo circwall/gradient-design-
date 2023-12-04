@@ -1,0 +1,318 @@
+.grad__hero{
+    margin-top: -11rem;
+    width: 100%;
+    background-image: url('../../asset/heroBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15rem;
+}
+
+
+.grad__hero-upper{
+    display: flex;
+    flex-direction: column;
+}
+
+.grad__hero-upper_up{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 4rem;
+
+    /* justify-content: space-evenly; */
+}
+
+
+.grad__hero-upper_up-text{
+    display: flex;
+    width: 100px;
+}
+
+.grad__hero-upper_up-text p{
+    width: 100%;
+    font-family:  var(--font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+
+.grad__hero-upper_up h4{
+font-family: var(--font-family);
+font-size: 34px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+}
+
+.grad__hero-upper_down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: last baseline;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.grad__hero-upper_down-left{
+    display: flex;
+    flex-direction: column;
+    gap: -12rem;
+    /* align-items: flex-end; */
+}
+
+ 
+.grad__hero-upper_down-left_caption-text{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+}
+.grad__hero-upper_down-left_caption-text_para{
+    width: 250px;
+    margin-left: -13rem;
+}
+
+.grad__hero-upper_down-left_caption-text_para p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+}
+.grad__hero-upper_down-left_caption-text p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grad__hero-upper_down-left_caption-text_heading{
+    display: flex;
+    width: 450px;
+}
+.grad__hero-upper_down-left_caption-text_heading h2{
+    font-family: var(--font-family);
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 100%;
+}
+
+.grad__hero-upper_down-right{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.grad__hero-upper_down-right-text{
+    width: 300px;
+}
+
+.grad__hero-upper_down-right-text p{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+
+.grad__hero-upper_down-right_image{
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    display: flex;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.grad__hero-down_service{
+
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+@media screen and (max-width:1015px){
+    
+    .grad__hero-upper_down-right_image{
+        margin-top: 5rem;
+    }
+
+    .grad__hero-upper_down-right-text{
+        width: 350px;
+    }
+    
+}
+
+@media screen and (max-width:620px){
+    .grad__hero-upper_down-left_caption-text_heading h2{
+        font-family: var(--font-family);
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: 100%;
+    }
+    .grad__hero-upper_down-left_caption-text_para {
+        width: 250px;
+        margin-left: -14rem;
+    }
+}
+
+@media screen and (max-width:554px){
+
+    .grad__hero{
+        margin-top: -11rem;
+        width: 100%;
+        background-image: url('../../asset/regtbg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .grad__hero-upper_down-left_caption-text{
+        display: flex;
+        flex-direction: column;
+        /* align-content: flex-end; */
+    }
+
+    
+    .grad__hero-upper_down-left_caption-text_heading{
+        width: 250px;
+    }
+    
+    .grad__hero-upper_down-left_caption-text_heading h2{
+        font-family: var(--font-family);
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        width: 100%;
+    }
+
+    .grad__hero-upper_down-left_caption-text_para{
+        width: 210px;
+        margin: 0;
+    }
+    .grad__hero-upper_down-left_caption-text_para p{
+        width: 100%;
+        font-size: 14px;
+        font-weight: 100;
+    }
+   
+    .grad__hero-upper_up{
+        float: right;
+        margin-left: 15rem;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+
+    .grad__hero-upper_up h4{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+    }
+    .grad__hero-upper_up p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .grad__hero-upper_down-right-text{
+        width: 250px;
+    }
+
+    .grad__hero-down_service{
+        /* flex: 1; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-gap:2rem; */
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .grad__hero-upper_up{
+        float: right;
+        margin-left: 12rem;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:420px){
+    .grad__hero-upper_up{
+        float: right;
+        margin-left: 10rem;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:380px){
+    .grad__hero-upper_up{
+        float: right;
+        margin-left: 6rem;
+        margin-top: -2rem;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:330px){
+    .grad__hero-upper_down-left_caption-text_heading h2{
+        font-family: var(--font-family);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+        width: 100%;
+    }
+
+
+
+    .grad__hero-upper_down-left_caption-text_heading{
+        width: 200px;
+    }
+    @media screen and (max-width:480px){
+        .grad__hero-upper_up{
+            float: right;
+            margin-left: 3rem;
+            margin-top: -2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    
+
+    .grad__hero-upper_down-left_caption-text_para{
+        width: 90px;
+    }
+    .grad__hero-upper_down-left_caption-text_para p{
+        width: 100%;
+        font-size: 8px;
+        font-weight: 100;
+    }
+
+    .grad__hero-upper_down-right-text{
+        width: 200px;
+    }
+    
+}
+
+
+@media screen and (max-width:350px){
+    .grad__hero-down_service{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

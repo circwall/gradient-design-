@@ -1,0 +1,13 @@
+.textCom-para{
+    width: 90px;
+}
+
+.textCom-para p{
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}

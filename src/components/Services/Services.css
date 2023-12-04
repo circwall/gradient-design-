@@ -1,0 +1,55 @@
+
+
+.grad__service{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: flex-start; */
+}
+
+.grad__service p{
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+
+.grad__service-rectangle{  
+    margin-top: 1rem;  
+    width: 140px;
+    height: 2px;
+    flex-shrink: 0;
+    background: #FFFFFF;
+}
+
+@media screen and (max-width:550px) {
+    .grad__service-rectangle{  
+        margin-top: 1rem;  
+        width: 120px;
+        height: 2px;
+        /* flex-shrink: 1; */
+        background: #FFFFFF;
+    }
+    
+    .grad__service p{
+        font-family: var(--font-family);
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .grad__service-rectangle{  
+        margin-top: 1rem;  
+        width: 110px;
+        height: 2px;
+        /* flex-shrink: 1; */
+        background: #FFFFFF;
+    }
+}

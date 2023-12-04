@@ -1,0 +1,124 @@
+
+
+.grad__what{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-gap:2rem; */
+
+}
+
+.grad__what h2{
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.grad__what-text{
+    margin-top: 2rem;
+    width: 300px;
+}
+.grad__what-text p{
+    width: 100%;
+}
+
+.grad__what p{
+    color: #E4E4E4;
+
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.grad__what-one{
+    background: url('../../asset/abouUp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grad__what-two{
+    background: url('../../asset/abouRi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.grad__what-three{
+    background: url('../../asset/abouleft.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.grad__what-four{
+    background: url('../../asset/abouright.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grad__what-two, .grad__what-one, .grad__what-three,.grad__what-four{
+    padding: 3rem;
+    padding-top: 6rem;
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .grad__what{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .grad__what{
+        padding: 0;
+    }
+
+    .grad__what-text{
+        width: 450px;
+    }
+    .grad__what-text p{
+        width: 100%;
+    }
+
+    .grad__what-two, .grad__what-one, .grad__what-three,.grad__what-four{
+        padding: 4rem 6rem;
+    }
+
+}
+
+
+@media screen and (max-width:630px){
+    .grad__what-text{
+        width: 300px;
+    }
+
+
+    .grad__what-text p{
+        width: 100%;
+    }
+
+
+    .grad__what-two, .grad__what-one, .grad__what-three,.grad__what-four{
+        padding: 3rem ;
+        padding-top: 6rem;
+    }
+
+   
+}
+
+@media screen and (max-width:330px){
+    .grad__what-text{
+        width: 200px;
+    }
+
+
+    .grad__what-text p{
+        width: 100%;
+    }
+
+}
