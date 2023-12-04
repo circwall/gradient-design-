@@ -1,77 +1,45 @@
-import React,{useState} from 'react'
+import React from 'react'
 import logo from '../../asset/Star 1.svg';
-import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
-import web from '../../asset/Vector.svg';
-
+import box from '../../asset/Vector.svg';
 
 const Footerbar = () => {
 
-    const [show,setShow] = useState(false)
     const  Menu =()=>(
-        <div className= 'grad__nav-head_menu fade-in-right'>
-            <div>
-                <p><a href='#'>ABOUT</a></p>
-                <p><a href='#'>SERVICES</a></p>
-                <p><a href='#'>CASES</a></p>
-                <p><a href='#'>TEAM</a></p>
-                <p><a href='#'>BOOST PROGRAM</a></p>
-                <p><a href='#'>PRODUCTS</a></p>
-                <p><a href='#'>BOOK</a></p>
-                <p><a href='#'>BLOG</a></p>
-                <p><a href='#'><img src={web} alt='browse'/></a></p>
-            </div>
+        <div className='drop_menu'>
+            <a href='#' className='border'>ABOUT</a>
+            <a href='#' className='border'>SERVICES</a>
+            <a href='#' className='border'>CASES</a>
+            <a href='#' className='border'>TEAM</a>
+           <a href='#' className='border'><div><img src={box}/></div></a>
         </div>
     )
+
   return (
-    <section className=''>
-           <div className='grad__nav'>
-            <div className='grad__nav-head_left-div'>
-                <div className='grad__nav-head__image'>
-                    <img src={logo} alt='logo'/>
-                    <h4>
-                        Influenzilla
-                    </h4>
+    <footer className='grad__footer-tab'>
+        <div className='grad__footer-tab_one border'>
+            <div className='grad__footer-tab_one-left'>
+                <div className='grad__footer-tab_one-logo__box'>
+                    <div className='grad__footer-tab_one-img'>
+                        <img className='footer__logo' src={logo} alt='logo'/>
+                    </div>
+                    <div className='grad__footer-tab_one-img__text'>
+                        <p className='gradient__text'>Influenzilla</p>
+                    </div>
                 </div>
-                
-                <div className='grad__nav-head__text'>
-                    <p>
+                <div className='grad__footer-tab_one-text'>
+                    <p className='gradient__text'>
                         bespoke design and marketing services
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div className='grad__nav-head_right-div'>
-                <div className='grad__nav-head_right-div_up'>
-                    <p><a href='#'>ABOUT</a></p>
-                    <p><a href='#'>SERVICES</a></p>
-                    <p><a href='#'>CASES</a></p>
-                    <p><a href='#'>TEAM</a></p>
-                    <p><a href='#'><img src={web} alt='browse'/></a></p>
-                </div>
-                <div className='grad__nav-head_right-div_down'>
-                    <p><a href='#'>BOOST PROGRAM</a></p>
-                    <p><a href='#'>PRODUCTS</a></p>
-                    <p><a href='#'>BOOK</a></p>
-                    <p><a href='#'>BLOG</a></p>
-                </div>
-            </div>
-            <div className='grad__nav-menubar'>
-                {!show ? <div onClick={()=>setShow(!show)} className='grad__nav-menubar_menu'>
-                    <div >
-                        MENU
-                    </div>
-                </div>:
-                <div onClick={()=>setShow(!show)} className='close'>
-                    <RiCloseLine  color='#fff' size={27} />
-                </div>}
-
-                
-                {show && (
-                    <Menu/>
-                )}
+        <div className='grad__footer-tab_one-right'>
+            <div className='grad__footer-tab_one-right-up'>
+                <Menu/>
             </div>
         </div>
-    </section>
+    </footer>
   )
 }
 
